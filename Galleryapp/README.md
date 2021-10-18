@@ -8,6 +8,7 @@ Type npm install in the command line
 Add below lines in .env file (still I dint added this path in the git ignore file )
 
 REACT_APP_API_URL = https://www.flickr.com/services/rest/
+
 REACT_APP_API_KEY = d31cafd82266d3a79e899608f6e83727
 
 
