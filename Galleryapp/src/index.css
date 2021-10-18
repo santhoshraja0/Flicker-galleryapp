@@ -1,0 +1,76 @@
+body {
+  width:100%;
+  height:100%;
+  position:relative;
+  padding:0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+.container input {
+  margin-left: 20px;
+}
+.photo_grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr) ;
+  padding: 40px 0px;
+}
+
+.overlay{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.7);
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display:none;
+}
+.overlay .image-cell{
+  display:flex;
+  width:100%;
+  height:100%;
+  justify-content:center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.overlay .headers {
+  color:#fff;
+  justify-content: space-between;
+}
+
+.overlay .close{
+  font-size: 30px;
+  top: 15px;
+  position: absolute;
+  right: 20px;
+  font-family: arial,sans-serif;
+  cursor: pointer;
+}
+
+.overlay .title{
+  padding-left: 20px;
+  font-size: 25px;
+  padding-top:15px;
+}
+
+.dimensions{
+  padding-left: 10px;
+}
