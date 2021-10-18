@@ -1,5 +1,5 @@
 
-Run in local environment:
+Steps to run in local environment:
 
 Goto package.json folder
 
